@@ -3,7 +3,7 @@ from interfaces.i_buyer_behaviour import IBuyerBehaviour
 from interfaces.i_return_order import IReturnOrder
 
 
-class Buyer(IReturnOrder, IBuyerBehaviour, ABC):
+class Buyer(IBuyerBehaviour, IReturnOrder, ABC):
     """ Абстрактный класс, представляющий покупателя.
 
     :attr :
